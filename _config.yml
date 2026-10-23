@@ -1,0 +1,31 @@
+# fooddoof — a small, slightly silly cookbook
+title: fooddoof
+description: A small, slightly silly cookbook.
+url: "https://meowsus.github.io"
+baseurl: "/foodoof"
+theme: minima
+
+# Minima header nav: the site title (→ home) plus these pages.
+header_pages:
+  - about.md
+
+# Recipes live in a collection so index.md can auto-list them.
+collections:
+  recipes:
+    output: true
+    sort_by: title
+
+defaults:
+  - scope:
+      path: ""
+      type: recipes
+    values:
+      layout: page
+
+markdown: kramdown
+
+# Build output contains only site pages — keep repo plumbing out.
+exclude:
+  - AGENTS.md
+  - README.md
+  - Gemfile
