@@ -9,7 +9,7 @@ anything; follow it so every session starts at full speed.
 conversation; the agent writes it as markdown into `_recipes/`, commits, and
 pushes. GitHub Pages serves the result automatically.
 
-**Live site:** <https://meowsus.github.io/foodoof/>
+**Live site:** <https://meowsus.github.io/fooddoof/>
 
 ## Layout
 
@@ -31,7 +31,7 @@ pushes. GitHub Pages serves the result automatically.
 3. Commit the single file to `main` with message `recipe: <dish name>` and
    push. No PR needed; this is a personal cookbook.
 4. Pages redeploys within a minute or so. Check with:
-   `gh api repos/meowsus/foodoof/pages/builds/latest --jq .status`
+   `gh api repos/meowsus/fooddoof/pages/builds/latest --jq .status`
    (`error` → built. Wait ~60s, check again.)
 
 Do **not**: create a PR, hand-rebuild the index, restyle the site, or touch
@@ -112,7 +112,7 @@ GitHub builds the site, so this is rarely needed:
 
 ```sh
 bundle install
-bundle exec jekyll serve   # http://127.0.0.1:4000/foodoof/
+bundle exec jekyll serve   # http://127.0.0.1:4000/fooddoof/
 ```
 
 (No ruby on the main machine as of Oct 2026 — pushing to `main` is the normal

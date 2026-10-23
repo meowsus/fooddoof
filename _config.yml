@@ -2,7 +2,7 @@
 title: fooddoof
 description: A small, slightly silly cookbook.
 url: "https://meowsus.github.io"
-baseurl: "/foodoof"
+baseurl: "/fooddoof"
 theme: minima
 
 # Minima header nav: the site title (→ home) plus these pages.
